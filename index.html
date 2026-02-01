@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEP Engineer Portfolio</title>
+  </head>
+  <body>
+    <header id="header"></header>
+    <main>
+      <section id="hero" class="hero"></section>
+      <section id="about"></section>
+      <section id="experience" style="background-color: var(--color-surface);"></section>
+      <section id="projects"></section>
+      <section id="education"></section>
+      <section id="contact" style="background-color: var(--color-primary); color: white; padding: var(--spacing-lg) 0;"></section>
+    </main>
+
+    <!-- PDF Modal -->
+    <div id="pdf-modal" class="modal-overlay">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 id="modal-title">Document Viewer</h3>
+          <button id="modal-close" class="btn btn-sm btn-secondary" style="border-color: #ddd;">Close</button>
+        </div>
+        <div id="modal-body" class="modal-body">
+          <!-- Content injected via JS -->
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

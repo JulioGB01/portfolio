@@ -1,0 +1,122 @@
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #3A5055;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-sm {
+    font-size: var(--font-size-small);
+    padding: 0.25rem 0.75rem;
+}
+
+/* Cards */
+.card {
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: var(--color-surface);
+    /* Placeholder */
+}
+
+.card-content {
+    padding: var(--spacing-sm);
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.modal-overlay.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-content {
+    background: white;
+    width: 90%;
+    height: 90%;
+    max-width: 1200px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    padding: var(--spacing-sm);
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-body {
+    flex: 1;
+    background: var(--color-surface);
+    position: relative;
+}
+
+.modal-body object,
+.modal-body iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Tags */
+.tag {
+    display: inline-block;
+    background: var(--color-surface);
+    color: var(--color-text-main);
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: var(--font-size-small);
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
