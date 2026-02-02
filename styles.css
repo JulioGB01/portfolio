@@ -619,16 +619,11 @@ button {
     max-width: 900px;
     margin: var(--spacing-xl) auto 0;
     padding-left: var(--spacing-lg);
+    border-left: 3px solid var(--color-primary);
 }
 
 .timeline::before {
-    content: '';
-    position: absolute;
-    left: 30px;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background: var(--color-primary);
+    display: none;
 }
 
 .timeline-card {
@@ -637,7 +632,7 @@ button {
     border-radius: var(--radius-md);
     padding: var(--spacing-lg);
     margin-bottom: var(--spacing-lg);
-    margin-left: var(--spacing-xl);
+    margin-left: 0;
     box-shadow: var(--shadow-small);
     transition: all var(--transition-normal);
 }
@@ -648,19 +643,18 @@ button {
 }
 
 .timeline-icon {
-    position: absolute;
-    left: -52px;
-    top: var(--spacing-lg);
-    width: 44px;
-    height: 44px;
+    width: 32px;
+    height: 32px;
     border-radius: var(--radius-round);
     background: var(--color-primary);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin-right: var(--spacing-sm);
+    font-size: 1rem;
     color: white;
-    font-size: 1.2rem;
-    box-shadow: 0 0 0 4px var(--color-light-gray);
+    flex-shrink: 0;
+    box-shadow: none;
 }
 
 .timeline-title {
