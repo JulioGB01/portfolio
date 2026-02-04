@@ -457,6 +457,22 @@ button {
     cursor: pointer;
 }
 
+.card-body {
+    padding: var(--spacing-lg);
+}
+
+.btn-outline-red {
+    border: 2px solid #D93025;
+    /* Strong Google Red */
+    color: #D93025;
+}
+
+.btn-outline-red:hover {
+    background-color: #D93025;
+    color: white;
+    box-shadow: var(--shadow-medium);
+}
+
 .card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-large);
@@ -573,6 +589,8 @@ button {
     flex: 1;
     display: flex;
     flex-direction: column;
+    padding: var(--spacing-lg);
+    padding-top: var(--spacing-sm);
 }
 
 .project-description {
