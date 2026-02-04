@@ -306,7 +306,8 @@ button {
 }
 
 .project-card .btn-outline:hover,
-.certificate-buttons .btn-outline:hover {
+.certificate-buttons .btn-outline:hover,
+.achievement-card .btn-outline:hover {
     background-color: var(--color-accent);
     color: white;
     transform: translateY(-2px);
@@ -462,13 +463,12 @@ button {
 }
 
 .btn-outline-red {
-    border: 2px solid #D93025;
-    /* Strong Google Red */
-    color: #D93025;
+    border: 2px solid var(--color-accent);
+    color: var(--color-accent);
 }
 
 .btn-outline-red:hover {
-    background-color: #D93025;
+    background-color: var(--color-accent);
     color: white;
     box-shadow: var(--shadow-medium);
 }
